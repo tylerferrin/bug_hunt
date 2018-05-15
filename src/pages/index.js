@@ -14,7 +14,15 @@ class IndexPage extends Component {
     const { splashImage } = this.props.data;
 
     if (this.state.displaySplash) {
-      return <Splash splashImage={splashImage}/>;
+      return (
+        <Splash
+          splashImage={splashImage}
+          releaseDate="07.20.18"
+          preOrderLink="http://music.thefourthwallband.com/"
+          callToAction="Listen to the first single 'Circular Ruins'"
+          callToActionLink="/"
+        />
+      );
     }
   }
 
@@ -34,8 +42,8 @@ export default IndexPage;
 export const splashQuery = graphql`
   query SplashImageQuery {
     splashImage: imageSharp(id: { regex: "/io_splash/" }) {
-      sizes(maxWidth: 680 ) {
-        ...GatsbyImageSharpSizes_tracedSVG
+      sizes(maxWidth: 1500 ) {
+        ...GatsbyImageSharpSizes
       }
     }
   }
