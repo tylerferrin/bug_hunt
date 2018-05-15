@@ -25,7 +25,7 @@ class IndexPage extends Component {
         >
           <Splash
             splashImage={splashImage}
-            releaseDate="07.20.18"
+            releaseDate="12'' / DIGITAL | 07.20.18"
             preOrderLink="http://music.thefourthwallband.com/"
             callToAction="Listen to the first single 'Circular Ruins'"
             callToActionLink="/"

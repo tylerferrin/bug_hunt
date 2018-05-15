@@ -40,7 +40,7 @@ const Splash = ({
             letterSpacing: '1.5px'
           }}
         >
-          Available {releaseDate}
+          {releaseDate}
         </p>
         <a
           href={preOrderLink}
