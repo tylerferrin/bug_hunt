@@ -67,8 +67,12 @@ Splash.propTypes = {
 
 const styles = {
   splashWrapper: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
     width: '100%',
-    height: '100vh'
+    height: '100%',
+    borderRadius: '10px'
   },
   splashImageStyles: {
     width: '100%',
@@ -81,7 +85,7 @@ const styles = {
     transform: 'translate(-50%, 50%)',
     textAlign: 'center',
     color: 'white',
-    'letterSpacing': '1px',
+    letterSpacing: '1px',
     textTransform: 'uppercase'
   },
   linkStyles: {
@@ -91,13 +95,14 @@ const styles = {
     color: 'white',
     fontFamily: 'Times New Roman',
     fontSize: '12px',
+    letterSpacing: '1.5px',
     textDecoration: 'none',
     '&:hover::after': {
       width: '100%'
     },
     '&:after': {
       position: 'absolute',
-      bottom: '-2px',
+      bottom: '-6.5px',
       left: 0,
       content: ' ',
       width: 0,

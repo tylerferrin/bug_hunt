@@ -15,13 +15,22 @@ class IndexPage extends Component {
 
     if (this.state.displaySplash) {
       return (
-        <Splash
-          splashImage={splashImage}
-          releaseDate="07.20.18"
-          preOrderLink="http://music.thefourthwallband.com/"
-          callToAction="Listen to the first single 'Circular Ruins'"
-          callToActionLink="/"
-        />
+        <div
+          css={{
+            margin: '2vh 1vw',
+            height: '96vh',
+            width: '98vw',
+            position: 'relative'
+          }}
+        >
+          <Splash
+            splashImage={splashImage}
+            releaseDate="07.20.18"
+            preOrderLink="http://music.thefourthwallband.com/"
+            callToAction="Listen to the first single 'Circular Ruins'"
+            callToActionLink="/"
+          />
+        </div>
       );
     }
   }
