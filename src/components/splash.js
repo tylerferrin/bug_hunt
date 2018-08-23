@@ -47,7 +47,7 @@ const Splash = ({
           target="_blank"
           css={linkStyles}
           >
-            Pre-order
+            Purchase
           </a>
         <a
           href={callToActionLink}
